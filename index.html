@@ -11,7 +11,7 @@
 
     <main class="option">
         <section class="poption">
-            <h2>OR</h2>
+            <h4>CHOOSE HEADS OR TAILS</h4>
 
             <div class="images">
                 <img id="h-img" src="images/heads.png" alt="pick heads" onclick="play('heads')">
@@ -20,17 +20,37 @@
         </section>
    
         <section class="coption">
-            <h2> IT IS. . .</h2>
+            <h2> FLIP IS. . .</h2>
 
             <div class="images">
               <img id="c-img" src="images/load.png" alt="" >
             </div>
             
         </section>
-   
-   
-
-
-
       </main>
-  </body>
+
+<section class="chalkboard">
+
+<h3 id="results">TALLIES</h3>
+
+<div id="play" class="score">
+  <p class="label"> WINS</p>
+  <p id="wins">0</p>
+</div>
+<div id="opp" class="score">
+  <p class="label">LOSSES</p>
+  <p id="losses">0</p>
+</div>
+
+
+<div classes="reset">
+  <button onclick="reset()">RESET SCORES</button>
+</div>
+
+</section>
+
+<script src="js/page.js"></script>
+
+
+</body>
+</html>
