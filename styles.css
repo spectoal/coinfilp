@@ -195,15 +195,16 @@ main section {
 }
 
 
+.reset {
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+
 @media screen and (max-width: 768px)  {
     main {grid-template-columns: 1fr;}
     main img {transform: scale(.9);}
   }
-
-
- .reset {
-    transform: translateXs(100%);
- }
-
 
 
