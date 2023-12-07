@@ -1,6 +1,6 @@
 function play(option) {
     let pOption = option;
-    let cOption = Math.floor(Math.random() * 2 + 1);
+    let cOption = Math.floor(Math.random() * 2) + 1;
 
     document.getElementById('c-img').src = "";
     document.getElementById('results').innerHTML = " . . .";
@@ -26,11 +26,11 @@ function play(option) {
             document.getElementById('results').innerHTML = "heads WINS";
             ++wins;
         } else if (pOption === "heads" && cOption === 2) {
-            document.getElementById('c-img').src = "images/heads.png";
+            document.getElementById('c-img').src = "images/tails.png";
             document.getElementById('results').innerHTML = "heads LOSES";
             ++losses; 
         } else if (pOption === "tails" && cOption === 1) {
-            document.getElementById('c-img').src = "images/tails.png";
+            document.getElementById('c-img').src = "images/heads.png";
             document.getElementById('results').innerHTML = "tails LOSES";
             ++losses;
         } else {
@@ -54,6 +54,6 @@ function reset() {
     sessionStorage.setItem("lossCount", 0);
     document.getElementById('wins').innerHTML = sessionStorage.getItem("winCount");
     document.getElementById('losses').innerHTML = sessionStorage.getItem("lossCount");
-    document.getElementById('c-img').src = "images/que.png";
-    document.getElementById('result').innerHTML = "Result";
+    document.getElementById('c-img').src = "images/load.png";
+    document.getElementById('results').innerHTML = "TALLIES";
 }
